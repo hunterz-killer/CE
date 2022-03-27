@@ -10,7 +10,7 @@
 -- 	CGPA float, 
 -- 	Batch char);
 
--- COPY studentdetails FROM '/home/hunter/Desktop/CE/studentdata.csv' CSV HEADER;
+-- COPY studentdetails FROM '<File Path>.csv' CSV HEADER;
 
 
 -- SELECT stu_name FROM studentdetails WHERE rolino='B14010';
