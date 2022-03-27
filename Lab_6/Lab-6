@@ -1,0 +1,136 @@
+-- CREATE TABLE StudentDetails (
+-- 	RollNo Varchar PRIMARY KEY, 
+-- 	Stu_Name Varchar, 
+-- 	Gender varchar, 
+-- 	Branch varchar,
+-- 	District varchar, 
+-- 	State_name varchar, 
+-- 	HorD varchar, 
+-- 	Admission_Year int, 
+-- 	CGPA float, 
+-- 	Batch char);
+
+-- COPY studentdetails FROM '/home/hunter/Desktop/CE/studentdata.csv' CSV HEADER;
+
+
+-- SELECT stu_name FROM studentdetails WHERE rolino='B14010';
+
+-- SELECT count(rollno) as Stu_City FROM studentdetails WHERE district='Thrissur';
+
+-- SELECT count(rollno) as Stu_state FROM studentdetails WHERE state_name='ANDHRA PRADESH';
+
+--  SELECT COUNT(ROLLNO) AS ME_2014 FROM studentdetails WHERE branch='ME' AND admission_year='2014';
+
+-- SELECT COUNT(ROLLNO) AS CSE_2014_A FROM studentdetails WHERE branch='CSE' AND admission_year='2014' AND batch='A';
+
+-- SELECT 
+-- (SELECT COUNT(ROLLNO) FROM studentdetails WHERE branch='CSE' AND admission_year='2012') AS CSE,
+-- (SELECT COUNT(ROLLNO) FROM studentdetails WHERE branch='ME' AND admission_year='2012') AS ME,
+-- (SELECT COUNT(ROLLNO) FROM studentdetails WHERE branch='EEE' AND admission_year='2012') AS EEE,
+-- (SELECT COUNT(ROLLNO) FROM studentdetails WHERE branch='ECE' AND admission_year='2012') AS ECE;
+
+-- SELECT 
+-- (SELECT COUNT(ROLLNO) FROM studentdetails WHERE branch='CSE' AND admission_year='2010') AS CSE,
+-- (SELECT COUNT(ROLLNO) FROM studentdetails WHERE branch='ME' AND admission_year='2010') AS ME,
+-- (SELECT COUNT(ROLLNO) FROM studentdetails WHERE branch='EEE' AND admission_year='2010') AS EEE,
+-- (SELECT COUNT(ROLLNO) FROM studentdetails WHERE branch='ECE' AND admission_year='2010') AS ECE;
+
+-- SELECT 
+-- (SELECT COUNT(ROLLNO) FROM studentdetails WHERE branch='CSE' AND admission_year='2014' AND cgpa>9) AS CSE,
+-- (SELECT COUNT(ROLLNO) FROM studentdetails WHERE branch='ME' AND admission_year='2014' AND cgpa>9) AS ME,
+-- (SELECT COUNT(ROLLNO) FROM studentdetails WHERE branch='EEE' AND admission_year='2014' AND cgpa>9) AS EEE,
+-- (SELECT COUNT(ROLLNO) FROM studentdetails WHERE branch='ECE' AND admission_year='2014' AND cgpa>9) AS ECE;
+
+
+-- SELECT 
+-- (SELECT COUNT(ROLLNO) FROM studentdetails WHERE branch='CSE' AND hord='Hostelite' AND cgpa<6) AS CSE,
+-- (SELECT COUNT(ROLLNO) FROM studentdetails WHERE branch='ME' AND hord='Hostelite' AND cgpa<6) AS ME,
+-- (SELECT COUNT(ROLLNO) FROM studentdetails WHERE branch='EEE' AND hord='Hostelite' AND cgpa<6) AS EEE,
+-- (SELECT COUNT(ROLLNO) FROM studentdetails WHERE branch='ECE' AND hord='Hostelite' AND cgpa<6) AS ECE;
+
+-- SELECT 
+-- (SELECT COUNT(ROLLNO) FROM studentdetails WHERE branch='CSE' AND hord='Dayscholar' AND cgpa>8) AS CSE,
+-- (SELECT COUNT(ROLLNO) FROM studentdetails WHERE branch='ME' AND hord='Dayscholar' AND cgpa>8) AS ME,
+-- (SELECT COUNT(ROLLNO) FROM studentdetails WHERE branch='EEE' AND hord='Dayscholar' AND cgpa>8) AS EEE,
+-- (SELECT COUNT(ROLLNO) FROM studentdetails WHERE branch='ECE' AND hord='Dayscholar' AND cgpa>8) AS ECE;
+
+-- SELECT 
+-- (SELECT COUNT(ROLLNO) FROM studentdetails WHERE branch='CSE' AND gender='Female' AND cgpa BETWEEN 5 and 7) AS CSE,
+-- (SELECT COUNT(ROLLNO) FROM studentdetails WHERE branch='ME' AND gender='Female' AND cgpa BETWEEN 5 and 7) AS ME,
+-- (SELECT COUNT(ROLLNO) FROM studentdetails WHERE branch='EEE' AND gender='Female' AND cgpa BETWEEN 5 and 7) AS EEE,
+-- (SELECT COUNT(ROLLNO) FROM studentdetails WHERE branch='ECE' AND gender='Female' AND cgpa BETWEEN 5 and 7) AS ECE;
+
+-- SELECT 
+-- (SELECT AVG(cgpa) FROM studentdetails WHERE branch='CSE' AND admission_year='2014') AS CSE,
+-- (SELECT AVG(cgpa) FROM studentdetails WHERE branch='ME' AND admission_year='2014') AS ME,
+-- (SELECT AVG(cgpa) FROM studentdetails WHERE branch='EEE' AND admission_year='2014') AS EEE,
+-- (SELECT AVG(cgpa) FROM studentdetails WHERE branch='ECE' AND admission_year='2014') AS ECE;
+
+-- SELECT 
+-- (SELECT AVG(cgpa) FROM studentdetails WHERE branch='CSE' AND admission_year='2014' AND gender='Female') AS CSE,
+-- (SELECT AVG(cgpa) FROM studentdetails WHERE branch='ME' AND admission_year='2014' AND gender='Female') AS ME,
+-- (SELECT AVG(cgpa) FROM studentdetails WHERE branch='EEE' AND admission_year='2014' AND gender='Female') AS EEE,
+-- (SELECT AVG(cgpa) FROM studentdetails WHERE branch='ECE' AND admission_year='2014' AND gender='Female') AS ECE;
+
+-- SELECT 
+-- (SELECT AVG(cgpa) FROM studentdetails WHERE branch='CSE' AND admission_year='2014' AND gender='Male') AS CSE,
+-- (SELECT AVG(cgpa) FROM studentdetails WHERE branch='ME' AND admission_year='2014' AND gender='Male') AS ME,
+-- (SELECT AVG(cgpa) FROM studentdetails WHERE branch='EEE' AND admission_year='2014' AND gender='Male') AS EEE,
+-- (SELECT AVG(cgpa) FROM studentdetails WHERE branch='ECE' AND admission_year='2014' AND gender='Male') AS ECE;
+
+
+-- SELECT 
+-- (SELECT AVG(cgpa) FROM studentdetails WHERE branch='CSE' AND admission_year='2014' AND hord='Hostelite') AS CSE,
+-- (SELECT AVG(cgpa) FROM studentdetails WHERE branch='ME' AND admission_year='2014' AND hord='Hostelite') AS ME,
+-- (SELECT AVG(cgpa) FROM studentdetails WHERE branch='EEE' AND admission_year='2014' AND hord='Hostelite') AS EEE,
+-- (SELECT AVG(cgpa) FROM studentdetails WHERE branch='ECE' AND admission_year='2014' AND hord='Hostelite') AS ECE;
+
+-- SELECT 
+-- (SELECT AVG(cgpa) FROM studentdetails WHERE branch='CSE' AND admission_year='2014' AND hord='Dayscholar') AS CSE,
+-- (SELECT AVG(cgpa) FROM studentdetails WHERE branch='ME' AND admission_year='2014' AND hord='Dayscholar') AS ME,
+-- (SELECT AVG(cgpa) FROM studentdetails WHERE branch='EEE' AND admission_year='2014' AND hord='Dayscholar') AS EEE,
+-- (SELECT AVG(cgpa) FROM studentdetails WHERE branch='ECE' AND admission_year='2014' AND hord='Dayscholar') AS ECE;
+
+
+-- SELECT 
+-- (SELECT ROUND(CAST(MAX(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='CSE' AND admission_year='2014') AS CSE,
+-- (SELECT ROUND(CAST(MAX(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='ME' AND admission_year='2014') AS ME,
+-- (SELECT ROUND(CAST(MAX(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='EEE' AND admission_year='2014') AS EEE,
+-- (SELECT ROUND(CAST(MAX(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='ECE' AND admission_year='2014') AS ECE;
+
+-- SELECT 
+-- (SELECT ROUND(CAST(MIN(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='CSE' AND admission_year='2014') AS CSE,
+-- (SELECT ROUND(CAST(MIN(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='ME' AND admission_year='2014') AS ME,
+-- (SELECT ROUND(CAST(MIN(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='EEE' AND admission_year='2014') AS EEE,
+-- (SELECT ROUND(CAST(MIN(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='ECE' AND admission_year='2014') AS ECE;
+
+-- SELECT 
+-- (SELECT ROUND(CAST(MAX(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='CSE' AND admission_year='2014' AND hord='Hostelite' AND gender='Male') AS CSE,
+-- (SELECT ROUND(CAST(MAX(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='ME' AND admission_year='2014' AND hord='Hostelite' AND gender='Male') AS ME,
+-- (SELECT ROUND(CAST(MAX(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='EEE' AND admission_year='2014' AND hord='Hostelite' AND gender='Male') AS EEE,
+-- (SELECT ROUND(CAST(MAX(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='ECE' AND admission_year='2014' AND hord='Hostelite' AND gender='Male') AS ECE;
+
+-- SELECT 
+-- (SELECT ROUND(CAST(MIN(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='CSE' AND admission_year='2014' AND hord='Dayscholar' AND district='Ernakulam') AS CSE,
+-- (SELECT ROUND(CAST(MIN(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='ME' AND admission_year='2014' AND hord='Dayscholar' AND district='Ernakulam') AS ME,
+-- (SELECT ROUND(CAST(MIN(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='EEE' AND admission_year='2014' AND hord='Dayscholar' AND district='Ernakulam') AS EEE,
+-- (SELECT ROUND(CAST(MIN(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='ECE' AND admission_year='2014' AND hord='Dayscholar' AND district='Ernakulam') AS ECE;
+
+-- SELECT 
+-- (SELECT ROUND(CAST(MAX(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='CSE' AND admission_year='2014' AND hord='Hostelite' AND gender='Female') AS CSE,
+-- (SELECT ROUND(CAST(MAX(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='ME' AND admission_year='2014' AND hord='Hostelite' AND gender='Female') AS ME,
+-- (SELECT ROUND(CAST(MAX(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='EEE' AND admission_year='2014' AND hord='Hostelite' AND gender='Female') AS EEE,
+-- (SELECT ROUND(CAST(MAX(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='ECE' AND admission_year='2014' AND hord='Hostelite' AND gender='Female') AS ECE;
+
+-- SELECT 
+-- (SELECT ROUND(CAST(MAX(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='CSE' AND admission_year='2014' AND hord='Hostelite' AND state_name='ANDHRA PRADESH') AS CSE,
+-- (SELECT ROUND(CAST(MAX(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='ME' AND admission_year='2014' AND hord='Hostelite' AND state_name='ANDHRA PRADESH') AS ME,
+-- (SELECT ROUND(CAST(MAX(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='EEE' AND admission_year='2014' AND hord='Hostelite' AND state_name='ANDHRA PRADESH') AS EEE,
+-- (SELECT ROUND(CAST(MAX(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='ECE' AND admission_year='2014' AND hord='Hostelite' AND state_name='ANDHRA PRADESH') AS ECE;
+
+-- SELECT 
+-- (SELECT ROUND(CAST(MIN(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='CSE' AND admission_year='2014' AND hord='Hostelite' AND district='Trivandrum' AND state_name='KERALA') AS CSE,
+-- (SELECT ROUND(CAST(MIN(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='ME' AND admission_year='2014' AND hord='Hostelite' AND district='Trivandrum' AND state_name='KERALA') AS ME,
+-- (SELECT ROUND(CAST(MIN(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='EEE' AND admission_year='2014' AND hord='Hostelite' AND district='Trivandrum' AND state_name='KERALA') AS EEE,
+-- (SELECT ROUND(CAST(MIN(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='ECE' AND admission_year='2014' AND hord='Hostelite' AND district='Trivandrum' AND state_name='KERALA') AS ECE;
+
