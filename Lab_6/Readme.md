@@ -68,6 +68,7 @@ SELECT
 
 ### Table 2
 ![image](https://user-images.githubusercontent.com/82221655/160280981-6a3d1d34-7cc2-4bd6-af5c-856c2057d1dd.png)
+
 <b>Row 1</b>
 ```
 SELECT 
@@ -153,6 +154,7 @@ SELECT
 
 ### Table 4
 ![image](https://user-images.githubusercontent.com/82221655/160281304-391c386f-2887-4d0d-8c6d-92f9ae713a2a.png)
+
 <b>Row 1</b>
 ```
 SELECT 
