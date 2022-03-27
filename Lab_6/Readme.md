@@ -163,54 +163,55 @@ SELECT
 ```
 
 <b>Row 2</b>
-``
+```
 SELECT 
 (SELECT ROUND(CAST(MIN(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='CSE' AND admission_year='2014') AS CSE,
 (SELECT ROUND(CAST(MIN(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='ME' AND admission_year='2014') AS ME,
 (SELECT ROUND(CAST(MIN(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='EEE' AND admission_year='2014') AS EEE,
 (SELECT ROUND(CAST(MIN(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='ECE' AND admission_year='2014') AS ECE;
-``
+```
 
 <b>Row 3</b>
-``
+```
 SELECT 
 (SELECT ROUND(CAST(MAX(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='CSE' AND admission_year='2014' AND hord='Hostelite' AND gender='Male') AS CSE,
 (SELECT ROUND(CAST(MAX(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='ME' AND admission_year='2014' AND hord='Hostelite' AND gender='Male') AS ME,
 (SELECT ROUND(CAST(MAX(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='EEE' AND admission_year='2014' AND hord='Hostelite' AND gender='Male') AS EEE,
 (SELECT ROUND(CAST(MAX(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='ECE' AND admission_year='2014' AND hord='Hostelite' AND gender='Male') AS ECE;
-``
+```
 
 <b>Row 4</b>
-``
+```
 SELECT 
 (SELECT ROUND(CAST(MIN(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='CSE' AND admission_year='2014' AND hord='Dayscholar' AND district='Ernakulam') AS CSE,
 (SELECT ROUND(CAST(MIN(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='ME' AND admission_year='2014' AND hord='Dayscholar' AND district='Ernakulam') AS ME,
 (SELECT ROUND(CAST(MIN(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='EEE' AND admission_year='2014' AND hord='Dayscholar' AND district='Ernakulam') AS EEE,
 (SELECT ROUND(CAST(MIN(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='ECE' AND admission_year='2014' AND hord='Dayscholar' AND district='Ernakulam') AS ECE;
-``
+```
+
 <b>Row 5</b>
-``
+```
 SELECT 
 (SELECT ROUND(CAST(MAX(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='CSE' AND admission_year='2014' AND hord='Hostelite' AND gender='Female') AS CSE,
 (SELECT ROUND(CAST(MAX(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='ME' AND admission_year='2014' AND hord='Hostelite' AND gender='Female') AS ME,
 (SELECT ROUND(CAST(MAX(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='EEE' AND admission_year='2014' AND hord='Hostelite' AND gender='Female') AS EEE,
 (SELECT ROUND(CAST(MAX(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='ECE' AND admission_year='2014' AND hord='Hostelite' AND gender='Female') AS ECE;
-``
+```
 
 <b>Row 6</b>
-``
+```
 SELECT 
 (SELECT ROUND(CAST(MAX(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='CSE' AND admission_year='2014' AND hord='Hostelite' AND state_name='ANDHRA PRADESH') AS CSE,
 (SELECT ROUND(CAST(MAX(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='ME' AND admission_year='2014' AND hord='Hostelite' AND state_name='ANDHRA PRADESH') AS ME,
 (SELECT ROUND(CAST(MAX(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='EEE' AND admission_year='2014' AND hord='Hostelite' AND state_name='ANDHRA PRADESH') AS EEE,
 (SELECT ROUND(CAST(MAX(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='ECE' AND admission_year='2014' AND hord='Hostelite' AND state_name='ANDHRA PRADESH') AS ECE;
-``
+```
 
 <b>Row 7</b>
-``
+```
 SELECT 
 (SELECT ROUND(CAST(MIN(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='CSE' AND admission_year='2014' AND hord='Hostelite' AND district='Trivandrum' AND state_name='KERALA') AS CSE,
 (SELECT ROUND(CAST(MIN(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='ME' AND admission_year='2014' AND hord='Hostelite' AND district='Trivandrum' AND state_name='KERALA') AS ME,
 (SELECT ROUND(CAST(MIN(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='EEE' AND admission_year='2014' AND hord='Hostelite' AND district='Trivandrum' AND state_name='KERALA') AS EEE,
 (SELECT ROUND(CAST(MIN(cgpa) AS NUMERIC),2) FROM studentdetails WHERE branch='ECE' AND admission_year='2014' AND hord='Hostelite' AND district='Trivandrum' AND state_name='KERALA') AS ECE;
-``
+```
