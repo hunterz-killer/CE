@@ -16,6 +16,8 @@ CREATE TABLE StudentDetails (
 ```
 
 # Question 2 - Inserting Data into Table
+CSV File - [Download Link](Lab_6/studentdata.csv)
+
 ```
 COPY studentdetails FROM '<File Path>.csv' CSV HEADER;
 ```
